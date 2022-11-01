@@ -1,0 +1,135 @@
+.vobros{
+&__container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+&__title{
+  max-width: 348px;
+  margin-right: 20px;
+  font-weight: 700;
+font-size: 46px;
+line-height: 130%;
+letter-spacing: 0.02em;
+color: #000000;
+}
+&__text-block{
+  max-width: 776px;
+}
+&__sub-title{
+  max-width: 100%;
+  font-weight: 600;
+font-size: 18px;
+line-height: 140%;
+color: #000000;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+&__sub-title::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/line.png");
+  background-size: cover;
+  background-position:  100%;
+  margin-left: 40px;
+  flex-shrink: 0;
+}
+&__text{
+  max-width: 691px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #434242;
+opacity: 0.8;
+margin-bottom: 65px;
+}
+&__sub-title2::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/plus.png");
+  background-size: cover;
+  background-position:  100%;
+  margin-left: 40px;
+  flex-shrink: 0;
+}
+&__sub-title2{
+  max-width: 100%;
+  font-weight: 600;
+font-size: 18px;
+line-height: 140%;
+color: #000000;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 65px;
+}
+&__sub-title-end::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/plus.png");
+  background-size: cover;
+  background-position:  100%;
+  margin-left: 40px;
+  flex-shrink: 0;
+}
+&__sub-title-end{
+  max-width: 100%;
+  font-weight: 600;
+font-size: 18px;
+line-height: 140%;
+color: #000000;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+}
+@media only screen and (max-width:700px) {
+  .vobros{
+    &__container{
+      flex-direction: column;
+      margin-bottom: 75px;
+    }
+    &__title{
+      margin-bottom: 40px;
+    }
+    &__text{
+      max-width: 430px;
+    }
+  }
+  
+}
+@media only screen and (max-width:500px) {
+  .vobros{
+   &__title{
+    font-size: 36px;
+line-height: 130%;
+   }
+   &__text{
+    max-width: 280px;
+  }
+  &__sub-title::after{
+    margin-left: 20px;
+  }
+  &__sub-title2::after{
+    margin-left: 20px;
+  }
+  &__sub-title-end::after{
+    margin-left: 20px;
+  }
+
+  }
+}
